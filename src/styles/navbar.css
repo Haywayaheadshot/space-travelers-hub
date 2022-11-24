@@ -1,0 +1,45 @@
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .space-hub-logo {
+    width: 10vw;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .nav-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 5vw;
+    border-bottom: 1px solid grey;
+  }
+  
+  .links {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .links:nth-child(3) {
+    border-left: 1px solid grey;
+    padding-left: 1em;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
+  
