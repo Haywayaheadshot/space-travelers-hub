@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 import '../styles/navbar.css';
 import logo from './images/planet.png';
@@ -23,13 +24,19 @@ function Navbar() {
           ? (
             <ul className="nav-popUp-ul">
               <li className="nav-popUp-li">
-                Rockets
+                <NavLink onClick={() => isClosed(false)} to="/" activeclassname="active-link">
+                  Rockets
+                </NavLink>
               </li>
               <li className="nav-popUp-li">
-                Missions
+                <NavLink onClick={() => isClosed(false)} to="/missions" activeclassname="active-link">
+                  Missions
+                </NavLink>
               </li>
               <li className="nav-popUp-li">
-                My Profile
+                <NavLink onClick={() => isClosed(false)} to="/profile" activeclassname="active-link">
+                  My Profile
+                </NavLink>
               </li>
             </ul>
           )
@@ -37,14 +44,18 @@ function Navbar() {
       </section>
       <ul className="nav-links for-desktop">
         <li className="nav-desk-li">
-          Rockets
+          <NavLink to="/" activeclassname="active-link">
+            Rockets
+          </NavLink>
         </li>
         <li className="nav-desk-li">
-          Missions
+          <NavLink to="/missions" activeclassname="active-link">
+            Missions
+          </NavLink>
         </li>
-        <li className="nav-desk-li">
+        <NavLink to="/profile" activeclassname="active-link">
           My Profile
-        </li>
+        </NavLink>
       </ul>
     </nav>
   );
