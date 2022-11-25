@@ -17,17 +17,17 @@ function renderWithRedux(rendererMissions) {
 }
 
 describe('Missions Testing', () => {
-    test('Render Missions', () => {
-        const renderMissions = renderer.create(
-          <Provider store={store}>
-            <BrowserRouter>
-              <Missions />
-            </BrowserRouter>
-          </Provider>,
-        ).toJSON();
-        expect(renderMissions).toMatchSnapshot();
-      });
-    
+  test('Render Missions', () => {
+    const renderMissions = renderer.create(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Missions />
+        </BrowserRouter>
+      </Provider>,
+    ).toJSON();
+    expect(renderMissions).toMatchSnapshot();
+  });
+
   test('Render Missions with Redux Store', () => {
     renderWithRedux();
   });
