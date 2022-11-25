@@ -16,15 +16,16 @@ const Mission = () => {
           <tr className="header-column-row">
             <th className="column-data">Mission</th>
             <th className="column-data">Description</th>
-            <th className="column-data">Membership</th>
             <th className="column-data">Status</th>
+            <th className="column-data"> </th>
           </tr>
         </thead>
         <tbody>
           {missions.map((mission) => (
             <NameAndDescription
-              key={mission.mission_id}
-              missionName={mission.mission_name}
+              key={mission.id}
+              id={mission.id}
+              missionName={mission.missionName}
               description={mission.description}
             />
           ))}
