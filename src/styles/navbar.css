@@ -60,6 +60,12 @@
 
   .nav-desk-li {
     cursor: pointer;
+    color: blue;
+  }
+
+  .nav-desk-li:nth-child(3) {
+    border-left: 1px solid blue;
+    padding-left: 10px;
   }
 
   .for-phone {
