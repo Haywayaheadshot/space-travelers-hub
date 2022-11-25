@@ -7,8 +7,10 @@ const Mission = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissons());
-  }, [dispatch]);
+    if (missions.length === 0) {
+      dispatch(getMissons());
+    }
+  }, [dispatch, missions.length]);
   return (
     <div className="table-container">
       <table>
@@ -27,6 +29,7 @@ const Mission = () => {
               id={mission.id}
               missionName={mission.missionName}
               description={mission.description}
+              reserved={mission.reserved}
             />
           ))}
         </tbody>

@@ -1,11 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import ReservedMissions from '../components/dep/ReservedMissions';
+import ProfileMissions from '../components/ProfileMissions';
 import '../styles/profile.css';
 
 export default function Profile() {
-  const missions = useSelector((state) => state.missions);
-  const joinedMissions = missions.filter((mission) => mission.reserved !== false);
   return (
     <>
       <div className="profile-tables-container">
@@ -15,16 +12,7 @@ export default function Profile() {
               <th>My Missions</th>
             </tr>
           </thead>
-          <tbody className="rockets-missions">
-            {
-          joinedMissions.map((joined) => (
-            <ReservedMissions
-              key={joined.id}
-              mission={joined.missionName}
-            />
-          ))
-            }
-          </tbody>
+          <ProfileMissions />
         </table>
         <table className="rocket-mission-container">
           <thead>

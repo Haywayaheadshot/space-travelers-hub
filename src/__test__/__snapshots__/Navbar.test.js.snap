@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Navbar 1`] = `
+<nav
+  className="nav-div"
+>
+  <section
+    className="logo-div"
+  >
+    <img
+      alt="Space Hub Logo"
+      className="space-hub-logo"
+      src="planet.png"
+    />
+    <h1
+      className="logo"
+    >
+      Space Travelers' Hub
+    </h1>
+  </section>
+  <section
+    className="hamburger-div for-phone"
+  >
+    <div
+      aria-expanded={false}
+      aria-label="Show menu"
+      className="hamburger-react"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "48px",
+          "outline": "none",
+          "position": "relative",
+          "transform": "none",
+          "transition": "0.8s cubic-bezier(0, 0, 0, 1)",
+          "userSelect": "none",
+          "width": "48px",
+        }
+      }
+      tabIndex={0}
+    >
+      <div
+        style={
+          Object {
+            "background": "#0290ff",
+            "height": "3px",
+            "left": "8px",
+            "position": "absolute",
+            "top": "13px",
+            "transform": "none",
+            "transition": "0.8s cubic-bezier(0, 0, 0, 1)",
+            "width": "32px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "background": "#0290ff",
+            "height": "3px",
+            "left": "8px",
+            "position": "absolute",
+            "top": "23px",
+            "transform": "none",
+            "transition": "0.8s cubic-bezier(0, 0, 0, 1)",
+            "width": "32px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "background": "#0290ff",
+            "height": "3px",
+            "left": "8px",
+            "position": "absolute",
+            "top": "33px",
+            "transform": "none",
+            "transition": "0.8s cubic-bezier(0, 0, 0, 1)",
+            "width": "32px",
+          }
+        }
+      />
+    </div>
+  </section>
+  <ul
+    className="nav-links for-desktop"
+  >
+    <li
+      className="nav-desk-li"
+    >
+      <a
+        activeclassname="active-link"
+        aria-current="page"
+        className="links active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li
+      className="nav-desk-li"
+    >
+      <a
+        activeclassname="active-link"
+        className="links"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li
+      className="nav-desk-li"
+    >
+      <a
+        activeclassname="active-link"
+        className="links"
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

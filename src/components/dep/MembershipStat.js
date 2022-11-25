@@ -5,10 +5,10 @@ export default function MembershipStat({ reserved }) {
   return (
     <>
       {!reserved && (
-      <button type="button" className="membership-stat">NOT A MEMBER</button>
+      <h1 type="button" className="membership-stat">NOT A MEMBER</h1>
       )}
       {reserved && (
-      <button type="button" className="active-membership-stat">Active member</button>
+      <h1 type="button" className="active-membership-stat">Active member</h1>
       )}
     </>
   );

@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const GET_MISSIONS = 'SPACE-TRAVELERS-HUB/src/redux/missions/getMissons';
 
@@ -10,16 +9,17 @@ const getMissionsApi = 'https://api.spacexdata.com/v3/missions';
 // action creators for display, join and leave missions
 
 export const getMissons = createAsyncThunk(
-  GET_MISSIONS, () => axios.get(getMissionsApi).then((res) => {
-    const missions = res.data;
-    const data = Object.keys(missions).map((id) => ({
+  GET_MISSIONS, async () => {
+    const response = await fetch(getMissionsApi);
+    const missions = await response.json();
+    const newData = Object.keys(missions).map((id) => ({
       id: missions[id].mission_id,
       missionName: missions[id].mission_name,
       description: missions[id].description,
       reserved: false,
     }));
-    return data;
-  }),
+    return newData;
+  },
 );
 
 const missionsSlice = createSlice({
