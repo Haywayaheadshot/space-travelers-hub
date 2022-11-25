@@ -1,0 +1,25 @@
+.profile-tables-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  min-width: 100%;
+  gap: 0;
+}
+
+.rocket-mission-container {
+  min-width: 30vw;
+}
+
+.rockets-missions {
+  border: 1px solid grey;
+  width: 100%;
+  display: grid;
+}
+
+.profile-missions-list {
+  padding: 0 2vw;
+}
+
+.missions-item-container {
+  border-bottom: 1px solid grey;
+}
