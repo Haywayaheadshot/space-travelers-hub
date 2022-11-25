@@ -1,0 +1,86 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  padding: 1em 2em;
+  margin: 5px 0;
+  display: grid;
+  gap: 0;
+}
+
+.column-header {
+  min-width: 100%;
+  text-align: left;
+  background-color: #fff;
+}
+
+.column-data,
+.column-data-body {
+  border: 1px solid grey;
+  padding-left: 1vw;
+  text-align: left;
+}
+
+.header-column-row,
+.body-column-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  gap: 0;
+}
+
+.body-column-row:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.466);
+}
+
+.body-column-row:nth-child(even) {
+  background-color: #fff;
+}
+
+.membership-stat {
+  background-color: #000;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.2rem 0.3rem;
+  color: #fff;
+  min-width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.column-data-body:nth-child(3),
+.column-data-body:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.active-membership-stat {
+  background-color: blue;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.2rem 0.3rem;
+  color: #fff;
+  min-width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.leave-misson,
+.join-misson {
+  background-color: #fff;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  max-height: 3em;
+  min-width: 80%;
+  font-size: 1.2rem;
+}
+
+.leave-misson {
+  border: 1.5px solid red;
+  color: red;
+}
