@@ -44,18 +44,20 @@ function Navbar() {
       </section>
       <ul className="nav-links for-desktop">
         <li className="nav-desk-li">
-          <NavLink to="/" activeclassname="active-link">
+          <NavLink to="/" className="links" activeclassname="active-link">
             Rockets
           </NavLink>
         </li>
         <li className="nav-desk-li">
-          <NavLink to="/missions" activeclassname="active-link">
+          <NavLink to="/missions" className="links" activeclassname="active-link">
             Missions
           </NavLink>
         </li>
-        <NavLink to="/profile" activeclassname="active-link">
-          My Profile
-        </NavLink>
+        <li className="nav-desk-li">
+          <NavLink to="/profile" className="links" activeclassname="active-link">
+            My Profile
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
